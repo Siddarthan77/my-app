@@ -23,7 +23,7 @@ node{
     }
       sh 'docker push siddarthandocker/projectv1.0'
    }
-   stage('Nexus Image Push'){
+   stage('Nexus Artificatory Image Push'){
    sh "docker login -u admin -p admin123 13.127.81.236:8083"
    sh "docker tag siddarthandocker/projectv1.0 13.127.81.236:8083/privateimage:1.0.0"
    sh 'docker push 13.127.81.236:8083/privateimage:1.0.0'
