@@ -1,7 +1,7 @@
 properties([pipelineTriggers([pollSCM('')])])
 node{
     stage('SCM Checkout'){
-        git url:'https://github.com/javahometech/my-app', branch: 'master'
+        git url:'https://github.com/Siddarthan77/my-app.git', branch: 'master'
     }
     stage('Welcome'){
         print "Build Got triggered, tested"
